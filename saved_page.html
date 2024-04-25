@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Model Gallery</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .gallery-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+  }
+  .card {
+    background-color: #fff;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: calc(50% - 20px);
+    text-align: center;
+  }
+  .card img {
+    width: 100%;
+    display: block;
+  }
+  .card-title {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .buttons {
+    margin: 15px 0;
+  }
+  .btn {
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .preview-btn {
+    background-color: #007bff;
+  }
+  .delete-btn {
+    background-color: #dc3545;
+  }
+</style>
+</head>
+<body>
+
+<div class="gallery-container">
+  <!-- Repeat this block for each card -->
+  <div class="card">
+    <img src="placeholder-image.jpg" alt="Statue 1">
+    <h2 class="card-title">Statue 1</h2>
+    <div class="buttons">
+      <button class="btn preview-btn">Preview</button>
+      <button class="btn delete-btn">Delete</button>
+    </div>
+  </div>
+  <!-- Repeat ends -->
+</div>
+
+</body>
+</html>
