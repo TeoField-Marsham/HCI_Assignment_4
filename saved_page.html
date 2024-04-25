@@ -22,6 +22,7 @@
   }
   .card {
     background-color: #dfdfdf;
+    padding: 15px;
     margin: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     width: calc(50% - 20px);
@@ -32,27 +33,31 @@
     flex-direction: column;
   }
   .card img {
-    width: 85%;
-    height: 300px;
+    width: calc(100% - 30px);
+    height: 250px;
     object-fit: cover;
     display: block;
+    margin-top: 15px; /* Add some space at the top of the image */
+    margin-bottom: 15px;
     margin: 0 auto; /* Centers the image within the card */
     border-radius: 15px; /* Ensures image itself has rounded corners */
   }
   .card-title {
-    margin: 5px 0;
-    flex-grow: 1;
+    flex-grow: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   .buttons {
     display: flex;
     justify-content: space-around;
-    margin: 15px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   .btn {
-    padding: 10px 15px;
+    padding: 10px 10px;
     margin: 5px;
     border: none;
     color: black;
@@ -65,7 +70,7 @@
   }
   .buttons .btn {
     flex: 1; /* Buttons will take up equal space */
-    margin: 15px; /* Adjust spacing between buttons */
+    margin: 10px; /* Adjust spacing between buttons */
   }
   .preview-btn {
     background-color: #6d7176;
