@@ -26,11 +26,15 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     width: calc(50% - 20px);
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
+    overflow: hidden;
   }
   .card img {
     width: 100%;
     display: block;
+    margin: 0 auto; /* Centers the image within the card */
+    border-radius: 15px; /* Ensures image itself has rounded corners */
+    height: auto;
   }
   .card-title {
     font-size: 18px;
@@ -41,11 +45,12 @@
   }
   .btn {
     padding: 10px 15px;
-    margin: 0 10px;
+    margin: 10px;
     border: none;
-    color: white;
+    color: black;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
+    font-size: 16px;
   }
   .preview-btn {
     background-color: #555759;
