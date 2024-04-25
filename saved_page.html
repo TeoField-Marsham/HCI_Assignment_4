@@ -20,13 +20,18 @@
     height: 100px; /* Adjust height as needed */
     color: white; /* Ensures text is visible against the background */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 0 20px;
   }
 
   .banner img {
     width: 110px; /* Adjust logo size as needed */
+  }
+
+  .button-container {
+    margin-left: auto; /* This pushes the button container to the right */
+    padding-right: 24px; /* Adjust as needed */
   }
 
   .banner .button {
@@ -156,7 +161,9 @@
 
 <div class="banner">
     <img src="images/logo1.png" alt="logo">
-    <button class="button">Home</button>
+    <div class="button-container">
+        <button class="button">Home</button>
+    </div>
 </div>
 
 <div class="gallery-container">
