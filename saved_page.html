@@ -15,6 +15,30 @@
     padding: 0;
   }
 
+  .banner {
+    background-color: #b2e3f0; /* Example blue color, change as needed */
+    height: 100px; /* Adjust height as needed */
+    color: white; /* Ensures text is visible against the background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .banner img {
+    width: 110px; /* Adjust logo size as needed */
+  }
+
+  .banner .button {
+    padding: 20px 20px;
+    background-color: #98e077;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
   .gallery-container {
     padding: 20px;
     display: flex;
@@ -82,7 +106,7 @@
   }
 
   .preview-btn {
-    background-color: #6d7176;
+    background-color: #999ca0;
   }
 
   .delete-btn {
@@ -126,12 +150,14 @@
 
 }
 
-
-
-
 </style>
 </head>
 <body>
+
+<div class="banner">
+    <img src="images/logo1.png" alt="logo">
+    <button class="button">Home</button>
+</div>
 
 <div class="gallery-container">
     <!-- Card 1 -->
