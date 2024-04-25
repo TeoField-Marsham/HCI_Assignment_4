@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Preview App</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .bg-image {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .navbar img {
+    width: 50px; /* Placeholder for icon size */
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .content h1 {
+    margin-bottom: 20px;
+  }
+  .button-group {
+    margin-top: 20px;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  .button img {
+    width: 30px; /* Placeholder for button icon size */
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-image">
+  <div class="navbar">
+    <img src="placeholder-camera-icon.png" alt="Camera">
+    <div>My Account</div>
+  </div>
+
+  <div class="content">
+    <img src="placeholder-sofa-icon.png" alt="Sofa">
+    <h1>Preview art from the comfort of your home</h1>
+    <div class="button-group">
+      <button class="button">
+        <img src="placeholder-scan-icon.png" alt="Scan">
+        Scan new Artwork
+      </button>
+      <button class="button">
+        <img src="placeholder-saved-icon.png" alt="Saved">
+        Saved Artworks
+      </button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
