@@ -118,6 +118,56 @@
     background-color: #dc3545;
   }
 
+  .modal {
+    display: none; /* Hide modal by default */
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+  }
+
+  .modal-content {
+      background-color: #fff;
+      margin: auto; 
+      padding: 20px;
+      border-radius: 25px;
+      width: 30%; 
+      min-width: 300px; 
+      text-align: center; 
+  }
+
+  .modal p {
+      font-size: 24px; 
+      margin-bottom: 20px; /* Space below the text */
+  }
+
+  .modal-btn {
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 20px;
+      width: 100px; /* Fixed width for both buttons */
+      text-align: center;
+  }
+
+  .yes-btn {
+      background-color: #dc3545; 
+  }
+
+  .no-btn {
+      background-color: #999ca0; 
+  }
+
   
 @media only screen and (max-width: 600px) {
   .gallery-container {
@@ -162,7 +212,7 @@
 <div class="banner">
     <img src="images/logo1.png" alt="logo">
     <div class="button-container">
-        <button class="button">Home</button>
+      <a href="home.html" class="button" style="text-decoration: none; display: inline-block;">Home</a>
     </div>
 </div>
 
@@ -228,5 +278,32 @@
     </div>
 </div>
 
+<!-- Confirmation Modal -->
+<div id="confirmModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <p>Are you sure you want to delete this scan?</p>
+    <button class="modal-btn yes-btn" onclick="closeModal(true)">Yes</button>
+    <button class="modal-btn no-btn" onclick="closeModal(false)">No</button>
+  </div>
+</div>
+<script>
+  function showModal() {
+      document.getElementById('confirmModal').style.display = 'flex';
+  }
+  
+  function closeModal(confirm) {
+      document.getElementById('confirmModal').style.display = 'none';
+      if (confirm) {
+          // Further actions for yes to be added here
+          console.log('The scan was deleted.'); // Placeholder action
+      }
+  }
+  
+  // Ensures the action is applicable for all delete buttons
+  document.querySelectorAll('.delete-btn').forEach(button => {
+      button.addEventListener('click', showModal);
+  });
+  </script>
+  
 </body>
 </html>
