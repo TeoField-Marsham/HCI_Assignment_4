@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>3D Model Gallery</title>
+<script src="https://unpkg.com/@google/model-viewer"></script>
 <style>
   * {
     box-sizing: border-box;
@@ -236,13 +237,13 @@
         <button class="btn delete-btn">Delete</button>
         </div>
     </div>
-    
+
     <!-- Card 3 -->
     <div class="card">
         <img src="images/image3.png" alt="Statue 3">
         <h2 class="card-title">Statue 3</h2>
         <div class="buttons">
-        <button class="btn preview-btn">Preview</button>
+        <button class="btn preview-btn" data-href="statue.usdz">Preview</button>
         <button class="btn delete-btn">Delete</button>
         </div>
     </div>
@@ -303,7 +304,21 @@
   document.querySelectorAll('.delete-btn').forEach(button => {
       button.addEventListener('click', showModal);
   });
-  </script>
-  
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var previewButtons = document.querySelectorAll('.preview-btn');
+      previewButtons.forEach(function(button) {
+          button.addEventListener('click', function() {
+              var url = button.getAttribute('data-href');
+              if (url) {
+                  window.location.href = url; // This navigates to the USDZ file for AR preview
+              }
+          });
+      });
+  });
+</script>
+
 </body>
 </html>
