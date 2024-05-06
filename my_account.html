@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Account</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .bg-image {
+    background-image: url('images/livingroom.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+  }
+  .navbar {
+    background-color: #b2e3f0; /* Example blue color, change as needed */
+    height: 100px; /* Adjust height as needed */
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .navbar img {
+    width: 110px; /* Placeholder for icon size */
+  }
+  .button-container {
+    margin-left: auto; /* This pushes the button container to the right */
+    padding-right: 0px; /* Adjust as needed */
+  }
+
+  .navbar .button {
+    padding: 20px 20px;
+    background-color: #98e077;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  .info-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: calc(100% - 40px);
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  h1 {
+    color: #333;
+    font-size: 24px;
+  }
+  p {
+    color: #666;
+    font-size: 16px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="bg-image">
+  <div class="navbar">
+    <img src="images/logo1.png" alt="logo">
+    <div class="button-container">
+      <a href="home.html">
+        <button class="button">
+            Home
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <div class="info-box" style="top: 150px;">
+    <h1>User Info</h1>
+    <p><strong>Email:</strong> user@example.com</p>
+    <p><strong>Username:</strong> user123</p>
+    <p><strong>Address:</strong> 123 Example St, City, Country</p>
+    <p><strong>Phone Number:</strong> +1234567890</p>
+  </div>
+
+  <div class="info-box" style="top: 350px;">
+    <h1>Share Scans</h1>
+    <p>Feature to share scans will be added here.</p>
+  </div>
+</div>
+
+</body>
+</html>
