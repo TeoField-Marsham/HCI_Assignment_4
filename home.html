@@ -76,9 +76,10 @@
   }
 
 @media only screen and (max-width: 600px) {
-  .button {
-    padding: 20px 20px; 
-    min-width: 280px; 
+  .main-button {
+    padding: 20px 40px; /* Increase padding for wider appearance */
+    font-size: 16px; /* Optional: Adjust font size if needed */
+    min-width: 280px; /* Increase minimum width */
   }
 }
 </style>
@@ -101,12 +102,12 @@
   <div class="content">
     <!-- <img src="images/sofa.jpg" alt="Sofa"> -->
     <h1>Preview art from the comfort of your home</h1>
-      <button class="button">
+    <button class="button main-button">
         <img src="images/camera.png" alt="Scan">
         Scan new Artwork
       </button>
       <a href="saved_page.html" style="text-decoration: none; color: inherit;">
-        <button class="button">
+        <button class="button main-button">
             <img src="images/bookmark.png" alt="Saved">
             Saved Artworks
         </button>
