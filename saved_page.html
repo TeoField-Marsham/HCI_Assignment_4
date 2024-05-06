@@ -17,9 +17,9 @@
   }
 
   .banner {
-    background-color: #b2e3f0; /* Example blue color, change as needed */
-    height: 100px; /* Adjust height as needed */
-    color: white; /* Ensures text is visible against the background */
+    background-color: #b2e3f0; 
+    height: 100px; 
+    color: white; 
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -27,12 +27,12 @@
   }
 
   .banner img {
-    width: 110px; /* Adjust logo size as needed */
+    width: 110px; 
   }
 
-  .button-container {
-    margin-left: auto; /* This pushes the button container to the right */
-    padding-right: 24px; /* Adjust as needed */
+  .button-container { /* Should be the same on every page */
+    margin-left: auto; /* Pushes the button container to the right */
+    padding-right: 24px; /* Adjust as needed(per page) */
   }
 
   .banner .button {
@@ -71,10 +71,10 @@
     height: 250px;
     object-fit: cover;
     display: block;
-    margin-top: 15px; /* Add some space at the top of the image */
+    margin-top: 15px; 
     margin-bottom: 15px;
-    margin: 0 auto; /* Centers the image within the card */
-    border-radius: 15px; /* Ensures image itself has rounded corners */
+    margin: 0 auto; 
+    border-radius: 15px; 
   }
 
   .card-title {
@@ -101,8 +101,8 @@
     cursor: pointer;
     border-radius: 15px;
     font-size: 18px;
-    width: 100px; /* Fixed width for both buttons */
-    text-align: center; /* Ensure text is centered in the button */
+    width: 100px; 
+    text-align: center; 
     display: inline-block;
   }
 
@@ -127,8 +127,8 @@
     top: 0;
     width: 100%; 
     height: 100%; 
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
     align-items: center;
     justify-content: center;
     display: flex; 
@@ -146,7 +146,7 @@
 
   .modal p {
       font-size: 24px; 
-      margin-bottom: 20px; /* Space below the text */
+      margin-bottom: 20px;
   }
 
   .modal-btn {
@@ -157,7 +157,7 @@
       cursor: pointer;
       font-size: 20px;
       border-radius: 20px;
-      width: 100px; /* Fixed width for both buttons */
+      width: 100px;
       text-align: center;
   }
 
@@ -176,12 +176,12 @@
   }
 
   .card {
-    width: calc(100% - 20px); /* Take up full width minus padding on small screens */
-    margin: 10px; /* Reduce margin for smaller screens */
+    width: calc(100% - 20px); 
+    margin: 10px; 
   }
 
   .card img {
-    width: calc(100% - 20px); /* Adjust width for smaller screens */
+    width: calc(100% - 20px); 
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -192,7 +192,7 @@
   }
 
   .buttons {
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     margin-top: 0px;
@@ -200,8 +200,8 @@
   }
 
   .btn {
-    width: 80%; /* Full width buttons on small screens */
-    margin: 5px 0; /* Space out vertically stacked buttons */
+    width: 80%; 
+    margin: 5px 0; 
   }
 
 }
@@ -313,7 +313,7 @@
           button.addEventListener('click', function() {
               var url = button.getAttribute('data-href');
               if (url) {
-                  window.location.href = url; // This navigates to the USDZ file for AR preview
+                  window.location.href = url; // This takes the user to the USDZ file for AR preview. However to leave the AR preview they have to use the back button
               }
           });
       });
